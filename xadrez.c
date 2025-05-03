@@ -58,16 +58,85 @@ int main() {
  
       
 
-
-
-
-
-
-
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
+   
+        int escolha;
+    
+        // Exibe as opções de movimento do cavalo em "L"
+        printf("Escolha a direção do movimento do Cavalo:\n");
+        printf("1 - Baixo, Baixo, Esquerda\n");
+        printf("2 - Baixo, Baixo, Direita\n");
+        printf("3 - Cima, Cima, Esquerda\n");
+        printf("4 - Cima, Cima, Direita\n");
+        
+        // Solicita ao usuário que digite sua escolha
+        printf("Digite sua escolha (1 a 4): ");
+        scanf("%d", &escolha);  // Lê a entrada do usuário
+    
+        printf("\n"); // Linha em branco para separar a entrada da saída
+    
+        // Verifica qual foi a escolha do usuário e executa o movimento correspondente
+        if (escolha == 1) {
+            // Movimento: duas casas para baixo
+            for (int i = 0; i < 2; i++) {
+                printf("Baixo\n");
+            }
+    
+            // Movimento: uma casa para a esquerda
+            int j = 0;
+            while (j < 1) {
+                printf("Esquerda\n");
+                j++;
+            }
+    
+        } else if (escolha == 2) {
+            // Movimento: duas casas para baixo
+            for (int i = 0; i < 2; i++) {
+                printf("Baixo\n");
+            }
+    
+            // Movimento: uma casa para a direita
+            int j = 0;
+            while (j < 1) {
+                printf("Direita\n");
+                j++;
+            }
+    
+        } else if (escolha == 3) {
+            // Movimento: duas casas para cima
+            for (int i = 0; i < 2; i++) {
+                printf("Cima\n");
+            }
+    
+            // Movimento: uma casa para a esquerda
+            int j = 0;
+            while (j < 1) {
+                printf("Esquerda\n");
+                j++;
+            }
+    
+        } else if (escolha == 4) {
+            // Movimento: duas casas para cima
+            for (int i = 0; i < 2; i++) {
+                printf("Cima\n");
+            }
+    
+            // Movimento: uma casa para a direita
+            int j = 0;
+            while (j < 1) {
+                printf("Direita\n");
+                j++;
+            }
+    
+        } else {
+            // Caso o usuário digite uma opção inválida
+            printf("Opção inválida.\n");
+        }
+    
+       
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
